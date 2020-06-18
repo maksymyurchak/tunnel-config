@@ -1,0 +1,14 @@
+---
+apiVersion: tunnel/v1
+kind: Deployment
+metadata:
+  name:go-http-tunnel-deploy
+spec:
+  #securityContext:
+      #runAsUser: 2000
+  containers:
+    - name: go-http-tunnel
+      image: golang-http
+      ports:
+        - containerPort: 80
+---
