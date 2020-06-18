@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: go-http-tunnel
-        image: busybox #docker.io/mydock408/tunnel-release:latest
+        image: nginx:1.14.2 #docker.io/mydock408/tunnel-release:latest
         ports:
         - containerPort: 5223
