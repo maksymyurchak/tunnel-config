@@ -8,7 +8,7 @@ spec:
       #runAsUser: 2000
   containers:
     - name: go-http-tunnel
-      image: golang-http
+      image: docker.io/mydock408/tunnel-release:latest
       ports:
         - containerPort: 80
 ---
