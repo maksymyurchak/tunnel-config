@@ -1,6 +1,6 @@
 ---
 apiVersion: tunnel/v1
-kind: Deployment
+kind: Pod
 metadata:
   name: go-http-tunnel-deploy
 spec:
