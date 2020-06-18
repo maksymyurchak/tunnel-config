@@ -6,6 +6,6 @@ metadata:
 spec:
   containers:
       - name: gohttptunnel
-        image: nginx:1.14.2 #docker.io/mydock408/tunnel-release:latest
+        image: docker.io/mydock408/tunnel-release:latest
         ports:
         - containerPort: 5223
