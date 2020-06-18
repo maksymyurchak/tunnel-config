@@ -2,7 +2,7 @@
 apiVersion: tunnel/v1
 kind: Deployment
 metadata:
-  name:go-http-tunnel-deploy
+  name: go-http-tunnel-deploy
 spec:
   containers:
     - name: go-http-tunnel
