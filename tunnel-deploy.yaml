@@ -1,11 +1,22 @@
   
-apiVersion: v1
-kind: Pod
+apiVersion: apps/v1
+kind: Deployment
 metadata:
   name: tunneldeployment
+  labels:
+    app: gotunnel
 spec:
-  containers:
-      - name: gohttptunnel
-        image: docker.io/mydock408/tunnel-release:latest
+  replicas: 3
+  selector:
+    matchLabels:
+      app: gotunnel
+  template:
+    metadata:
+      labels:
+        app: gotunnel
+    spec:
+      containers:
+      - name: gotunnel
+        image: docker.io/mydock1408/tunnel-release:latest
         ports:
         - containerPort: 5223
