@@ -1,10 +1,9 @@
+---
 apiVersion: tunnel/v1
 kind: Deployment
 metadata:
   name:go-http-tunnel-deploy
 spec:
-  #securityContext:
-      #runAsUser: 2000
   containers:
     - name: go-http-tunnel
       image: docker.io/mydock408/tunnel-release:latest
